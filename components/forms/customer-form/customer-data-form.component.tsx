@@ -18,7 +18,7 @@ const CustomerDataForm: FC<CustomerDataProps> = ({
   activeStep,
   handleNext,
 }: CustomerDataProps) => {
-  const methods = useForm<any>({
+  const methods = useForm<ICustomer>({
     resolver: yupResolver(personalDataSchema),
     defaultValues: { ...data },
   });
