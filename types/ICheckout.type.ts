@@ -26,7 +26,7 @@ export type ICheckout = {
   }
   
   export interface ICustomer {
-    name: string;
+    name: string | undefined;
     lastname: string;
     email: string;
     address: IAddress;
